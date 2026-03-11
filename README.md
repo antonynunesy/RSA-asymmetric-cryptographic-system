@@ -10,8 +10,8 @@ Tal projeto está sendo produzido para compor e incrementar parte dos ensinament
 
 ## 👨‍💻 Autores
 
-Antony Nunes
-Bruno Palmeira
-Hanna Martins
-Pedro Hauschild
+Antony Nunes<br>
+Bruno Palmeira<br>
+Hanna Martins<br>
+Pedro Hauschild<br>
 Victor Rafael
