@@ -22,4 +22,3 @@ def inverso_modular(a, m):
     if x < 0:
         x = x + m0
     return x
-
