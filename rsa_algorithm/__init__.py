@@ -1,3 +1,4 @@
+from .entradas import *
 from .blocagem import *
 from .codificacao import *
 from .decodificacao import *
