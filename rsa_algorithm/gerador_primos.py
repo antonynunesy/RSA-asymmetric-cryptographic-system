@@ -1,7 +1,7 @@
 import random
 from .exp_modular import *
 
-def miller_rabin(n, k=40):
+def miller_rabin(n, k=50):
 
     if n <= 1:
         return False
@@ -10,7 +10,6 @@ def miller_rabin(n, k=40):
     if n % 2 == 0:
         return False
 
-    # escrever n-1 = 2^r * d
     d = n - 1
     r = 0
 
@@ -38,8 +37,6 @@ def gerar_primo(bits):
     while True:
 
         n = random.getrandbits(bits)
-
-        # garante tamanho e impar
         n |= (1 << bits - 1) | 1
 
         if miller_rabin(n):

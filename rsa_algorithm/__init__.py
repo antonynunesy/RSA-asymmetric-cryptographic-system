@@ -4,6 +4,5 @@ from .encriptacao import *
 from .decriptacao import *
 from .inverso_modular import *
 from .exp_modular import *
-from .gerar_expoente_pub import *
 from .tcr import *
 from .gerador_primos import *

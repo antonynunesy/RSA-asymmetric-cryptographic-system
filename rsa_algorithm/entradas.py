@@ -1,10 +1,8 @@
-def receber_mensagem():
+def receber_mensagem(msg):
+    
     while(True):
-        msg = input("Digite sua mensagem (Compatibilidade com caracteres de dois digitos da ASCII): \n")
-
         if(msg.strip() != ""):
             break
+        msg = input("Digite uma mensagem válida!! ")
 
-        print("Digite uma mensagem válida!!")
-
-    return msg.strip().upper()
+    return msg.strip()

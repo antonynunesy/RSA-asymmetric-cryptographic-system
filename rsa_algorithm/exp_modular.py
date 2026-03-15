@@ -3,7 +3,6 @@ def mod_exp(base, exp, mod):
     base = base % mod
 
     while exp > 0:
-
         if exp % 2 == 1:
             resultado = (resultado * base) % mod
 

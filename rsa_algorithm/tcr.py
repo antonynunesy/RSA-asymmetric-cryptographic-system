@@ -13,4 +13,5 @@ def tcrRSA(mensagem, lambd ,modulos):
         razao = razaoM // mod
         inverso = inverso_modular(razao  % mod, mod)
         resultado = (resultado + inverso * resto * razao) % razaoM
+
     return str(resultado)
