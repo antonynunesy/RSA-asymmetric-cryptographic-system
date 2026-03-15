@@ -1,4 +1,4 @@
-# RSA - Sistema Criptográfico Assimétrico 🔐
+# RSA - Sistema Criptográfico Assimétrico 
 
 Este projeto consiste na implementação do algoritmo **RSA**, incluindo a geração das chaves, criptografia e descriptografia de mensagens sem a utilização de bibliotecas criptograficas prontas.
 
@@ -8,7 +8,7 @@ Tal projeto está sendo produzido para compor e incrementar parte dos ensinament
 
 ---
 
-## 👨‍💻 Autores
+## Autores
 
 Antony Nunes<br>
 Bruno Palmeira<br>

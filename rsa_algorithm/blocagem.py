@@ -3,7 +3,8 @@ def blocagem(mensagem, n):
     bloco = ""
     
     for i in range(len(mensagem)):
-        if int(bloco + mensagem[i]) > n:
+        valor  = int(bloco + mensagem[i])
+        if valor >= n:
             blocos.append(bloco)
             bloco = mensagem[i]
         else:

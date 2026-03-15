@@ -1,11 +1,11 @@
 from .inverso_modular import *
-from .exp_modular import *
+from .tcr import *
 
-def decodificacao(msg_cod, n, lambd, p, q):
+def decriptacao(msg_cod, n, lambd, p, q):
     msg_decod = "" 
     i_lambd = inverso_modular(lambd, (p-1) * (q-1))
     
     for i in range(len(msg_cod)):
-        msg_decod += str(mod_exp(int(msg_cod[i]), i_lambd, n))
+        msg_decod += tcrRSA(int(msg_cod[i]), i_lambd, [p,q])
     
     return msg_decod

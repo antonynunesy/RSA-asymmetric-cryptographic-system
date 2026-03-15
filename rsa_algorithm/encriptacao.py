@@ -1,7 +1,7 @@
 from .blocagem import blocagem
 from .exp_modular import mod_exp
 
-def codificacao(mensagem, n, lambd):
+def encriptacao(mensagem, n, lambd):
     blocos = blocagem(mensagem, n)
     blocos_cod = []
     
