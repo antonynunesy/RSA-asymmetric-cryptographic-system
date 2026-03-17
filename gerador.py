@@ -10,13 +10,15 @@ def main():
     """ 
 
     #Geração de dois números primos com número de bits arbitrário(chaves privadas)
-    p = gerar_primo(64)
-    q = gerar_primo(64)
+    #Boa eficiência até números de 1024 bits (+- 309 digitos cada.)
+    p = gerar_primo(128)
+    q = gerar_primo(128)
     
     #Definição do expoente público padrão
     exp_pub = 65537
     
     #Cálculo da chave pública (n = p * q)
+    #No pico de eficiência, a chave pública possui 617 digitos.
     key_pub = p * q
 
     #Dilvulgação das chaves para o receptor.
