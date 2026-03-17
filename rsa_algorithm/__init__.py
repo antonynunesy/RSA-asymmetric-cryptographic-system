@@ -1,3 +1,7 @@
+"""
+Arquivo principal que reúne as funções do algoritmo RSA para serem importadas.
+"""
+
 from .entradas import *
 from .blocagem import *
 from .encriptacao import *

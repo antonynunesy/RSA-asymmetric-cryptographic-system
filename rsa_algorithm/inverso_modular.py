@@ -1,24 +1,32 @@
 def inverso_modular(a, m):
-    m0 = m #guarda o valor original do modulo
-    y = 0 #segundo coeficiente de bezout
-    x = 1 #inverso modular que procuramos
+    """
+    Calcula o inverso modular utilizando o algoritmo de Euclides estendido.
+    """
 
-    #objetivo: a*x + m*y = 1
+    m0 = m#Armazena o valor original do módulo
+    y = 0
+    x = 1#Resultado (inverso modular)
+
+    #Caso base.
     if m == 1:
         return 0
+
     while a > 1:
-        #q e quociente
+        #Calcula quociente da divisão
         q = a // m
+
+        #Atualiza valores com t sendo temporaria
         t = m
-        #m e resto
         m = a % m
         a = t
+
+        #Atualiza os coeficientes de Bézout
         t = y
-        #t variavel temp
-        #atualiza x e y
         y = x - q * y
         x = t
-    #torna x em positivo
+
+    #Garante resultado positivo somando o modulo
     if x < 0:
         x = x + m0
+
     return x

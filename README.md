@@ -15,3 +15,7 @@ Bruno Palmeira<br>
 Hanna Martins<br>
 Pedro Hauschild<br>
 Victor Rafael
+
+## Orientador
+
+Prof. Tiago Massoni
